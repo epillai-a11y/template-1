@@ -92,7 +92,7 @@ void opcontrol() {
         chassis.curvature(leftY, rightX);
         // --- Metric Movement Test (~30cm) ---
         if (master.get_digital_new_press(DIGITAL_X)) {
-            chassis.setPose(0, 0, 0);
+            chassis.setPose(0, 0, 0); 
             chassis.moveToPoint(0, 11.81, 2000);
             chassis.waitUntilDone();
         }
